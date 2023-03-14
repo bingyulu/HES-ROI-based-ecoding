@@ -14,7 +14,7 @@ Command for classify shots:
 ```
 python shot_boundary_detection/shot_scale_classification.py --shot_dir ./shot_cls_result/ --video_dir ./1080p_crf28_mp4/$video_name$ --frame_dir ./frames/1080p_crf28_frames/
 ```
-The non-ROI compression and ROI-based frame merging step are done by the ROI_based_encoding_rgb_y4m.sh. Before running, we should chanage the variable video_name in the script, the output path video_name_output can also be changed in the script if you want.
+The non-ROI compression and ROI-based frame merging step are done by the ROI_based_encoding_rgb_y4m.sh. Before running, you should chanage the variable video_name in the script. Besides, you may want to change the variable video_name_output_crf31 and video_name_output to your video output path. The root_dir in pipe_merge_frame_y4m.py should also be changed  according to your video output path.
 ```
 bash ROI_based_encoding_rgb_y4m.sh
 ```
